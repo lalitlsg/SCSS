@@ -194,7 +194,7 @@ main div:nth-child(6) {
   border-top: 10px;
   border-left: 50%;
   border-right: false;
-  border-radius: 1;
+  border-radius: 4;
   margin-left: "px";
   margin-top: true;
 }
@@ -208,7 +208,7 @@ main div:nth-child(6) {
   font-size: 3;
   font-size: "LalitG";
   font-size: "ali";
-  font-family: ud6a0c92f;
+  font-family: u35a4aceb;
 }
 
 #func #colors {
@@ -268,6 +268,15 @@ main div:nth-child(6) {
   color: "text", "btn";
   color: true;
   color: "text" white;
+}
+
+#func .test-class {
+  margin: true;
+  margin: false;
+  color: false;
+  margin: false;
+  background: number;
+  background: 20px;
 }
 
 @media (max-width: 600px) {

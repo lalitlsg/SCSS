@@ -136,4 +136,32 @@ $base-width: 100;
     color: map-has-key($map, "btn");
     color: nth($map, 2);
   }
+
+  //Introspection Functions
+
+  $no: 20px;
+  $ch: "Moroco";
+  $mylist: 10px 20px 30px;
+  $mymap: (
+    "first": 100px,
+    "second": 200px
+  );
+
+  @mixin mymixin {
+    height: 10px;
+  }
+  @function test() {
+  }
+
+  .test-class {
+    $local: 30px;
+    margin: variable-exists(no);
+    margin: global-variable-exists(local);
+    color: mixin-exists(
+      mymixin
+    ); //mymixin and test both exists still showing false. todo: check later
+    margin: function-exists(test);
+    background: type-of($no);
+    background: inspect($no);
+  }
 }
