@@ -75,4 +75,41 @@ $base-width: 100;
     background-color: lightness($color: #000000);
     background-color: alpha($color: #000000);
   }
+
+  //List Functions
+  $list: 10px, 20px, 30px;
+  $list2: 100px, 200px, 300px;
+  .list {
+    margin: length($list);
+    margin: nth($list, 2);
+    margin: set-nth($list, 2, 1em);
+    border-radius: join($list, $list2, comma);
+    margin: append($list, 100px, comma);
+    margin: zip($list, $list2);
+    margin: index($list, 30px);
+    margin: list-separator($list);
+  }
+
+  //Selector Functions
+  $selector: selector-nest("ul", "li");
+  $selector1: selector-append("li", "#me");
+  $selector2: selector-replace("li.abc", ".abc", ".to");
+  $selector3: simple-selectors("ul.games");
+  $selector4: selector-unify("a", ".link");
+  #{$selector} {
+    background-color: $bg-color;
+    margin-top: 5px;
+  }
+  #{$selector1} {
+    color: white;
+  }
+  #{$selector2} {
+    font-size: 30px;
+  }
+  #{$selector3} {
+    width: 10px;
+  }
+  #{$selector4} {
+    color: white;
+  }
 }
