@@ -107,9 +107,33 @@ $base-width: 100;
     font-size: 30px;
   }
   #{$selector3} {
-    width: 10px;
+    width: 30px;
   }
   #{$selector4} {
     color: white;
+  }
+
+  //Map Functions
+  $map: (
+    "bg": red,
+    "text": white,
+    "btn": blue
+  );
+  $map2: (
+    "p": green,
+    "h1": orange
+  );
+
+  $merge: map-merge($map, $map2);
+  $removed: map-remove($map, "bg");
+
+  .mymap {
+    color: map-get($map, "text");
+    color: map-keys($map);
+    color: map-values($map);
+    color: map-keys($merge);
+    color: map-keys($removed);
+    color: map-has-key($map, "btn");
+    color: nth($map, 2);
   }
 }

@@ -194,7 +194,7 @@ main div:nth-child(6) {
   border-top: 10px;
   border-left: 50%;
   border-right: false;
-  border-radius: 9;
+  border-radius: 1;
   margin-left: "px";
   margin-top: true;
 }
@@ -208,7 +208,7 @@ main div:nth-child(6) {
   font-size: 3;
   font-size: "LalitG";
   font-size: "ali";
-  font-family: u1b6cbcf1;
+  font-family: ud6a0c92f;
 }
 
 #func #colors {
@@ -253,11 +253,21 @@ main div:nth-child(6) {
 }
 
 #func ul, #func .games {
-  width: 10px;
+  width: 30px;
 }
 
 #func a.link {
   color: white;
+}
+
+#func .mymap {
+  color: white;
+  color: "bg", "text", "btn";
+  color: red, white, blue;
+  color: "bg", "text", "btn", "p", "h1";
+  color: "text", "btn";
+  color: true;
+  color: "text" white;
 }
 
 @media (max-width: 600px) {
