@@ -1,0 +1,53 @@
+@mixin box-shadow($blur, $alp: 0.2) {
+  box-shadow: 0 5px 5px rgba($color: #000000, $alpha: $alp);
+}
+
+@mixin text-shadow() {
+  text-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0.2);
+}
+
+header {
+  color: $text-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: $bg-color;
+  @include box-shadow(5px, 0.25);
+  section {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      @include text-shadow();
+    }
+    div {
+      display: none;
+      span {
+        display: block;
+        height: 5px;
+        width: 40px;
+        background-color: white;
+        margin: 5px;
+        cursor: pointer;
+        @include box-shadow(5px);
+      }
+    }
+  }
+  nav {
+    ul {
+      margin: 5px 0;
+      list-style-type: none;
+      li {
+        display: inline;
+        padding: 5px;
+        a {
+          text-decoration: none;
+          color: $text-color;
+          @include text-shadow();
+        }
+        &:hover {
+          background-color: $hover_color;
+        }
+      }
+    }
+  }
+}

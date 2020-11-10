@@ -1,0 +1,21 @@
+aside {
+  min-width: 200px;
+  background-color: $aside-bg;
+  margin: 10px;
+  div {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid $hover_color;
+    @include text-shadow();
+    @include box-shadow(5px);
+
+    &:hover {
+      color: $text-color;
+      background-color: $hover_color;
+      transition: 1s;
+      transform: translateX(10px);
+    }
+  }
+}
