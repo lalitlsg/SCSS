@@ -29,4 +29,19 @@ $base-width: 100;
     @include div-comm();
     width: width(4);
   }
+
+  //Number functions
+  .num {
+    margin-right: abs(-10px);
+    width: ceil(8.1px);
+    height: floor(8.7px);
+    padding: round(4.5px);
+    border-bottom: max(10px, 20px, 30px);
+    border-top: min(10px, 20px, 30px);
+    border-left: percentage(1/2);
+    border-right: comparable(1em, 10px);
+    border-radius: random(10);
+    margin-left: unit(100px);
+    margin-top: unitless(100);
+  }
 }
