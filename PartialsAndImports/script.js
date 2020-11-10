@@ -1,9 +1,7 @@
 let logo = document.getElementById("logo");
 let nav = document.getElementById("nav");
 
-let clicked = false;
 logo.addEventListener("click", () => {
-  clicked = true;
   nav.style.display === "" || nav.style.display === "none"
     ? (nav.style.display = "block")
     : (nav.style.display = "none");
