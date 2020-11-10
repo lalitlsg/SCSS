@@ -194,7 +194,7 @@ main div:nth-child(6) {
   border-top: 10px;
   border-left: 50%;
   border-right: false;
-  border-radius: 6;
+  border-radius: 5;
   margin-left: "px";
   margin-top: true;
 }
@@ -208,7 +208,24 @@ main div:nth-child(6) {
   font-size: 3;
   font-size: "LalitG";
   font-size: "ali";
-  font-family: uebd1bbdb;
+  font-family: u6b6ea212;
+}
+
+#func #colors {
+  background-color: #111e3c;
+  background-color: #7493d8;
+  background-color: #4f4ccd;
+  background-color: #1a61ff;
+  background-color: #8d8d8d;
+  background-color: #a63a67;
+  background-color: rgba(76, 116, 205, 0.2);
+  background-color: 0deg;
+  background-color: 0;
+  background-color: 0;
+  background-color: 0;
+  background-color: 0%;
+  background-color: 0%;
+  background-color: 1;
 }
 
 @media (max-width: 600px) {

@@ -57,4 +57,22 @@ $base-width: 100;
     font-size: str-slice("Lalit", 2, 4);
     font-family: unique-id();
   }
+
+  //Color Functions
+  #colors {
+    background-color: darken($bg-color, 40);
+    background-color: lighten($bg-color, 10);
+    background-color: adjust-hue($bg-color, 20);
+    background-color: saturate($bg-color, 90);
+    background-color: desaturate($bg-color, 90);
+    background-color: mix($bg-color, red);
+    background-color: transparentize($bg-color, 0.8);
+    background-color: hue($color: #000000);
+    background-color: red($color: #000000);
+    background-color: green($color: #000000);
+    background-color: blue($color: #000000);
+    background-color: saturation($color: #000000);
+    background-color: lightness($color: #000000);
+    background-color: alpha($color: #000000);
+  }
 }
