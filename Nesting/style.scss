@@ -37,6 +37,9 @@ body {
           &:link {
             color: $text-color;
           }
+          &:visited {
+            color: $text-color;
+          }
         }
       }
     }

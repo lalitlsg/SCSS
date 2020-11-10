@@ -55,4 +55,8 @@ body nav ul li a {
 body nav ul li a:link {
   color: white;
 }
+
+body nav ul li a:visited {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

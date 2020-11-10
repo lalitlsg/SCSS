@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* header {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  background-color: #4c74cd;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+* header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* header section h1 {
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+* header section div {
+  display: none;
+}
+
+* header section div span {
+  display: block;
+  height: 5px;
+  width: 40px;
+  background-color: white;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+* header nav ul {
+  margin: 5px 0;
+  list-style-type: none;
+}
+
+* header nav ul li {
+  display: inline;
+  padding: 5px;
+}
+
+* header nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+* header nav ul li:hover {
+  background-color: #7393d8;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+  header nav ul li {
+    display: block;
+    text-align: center;
+  }
+  header section div {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) {
+  header nav {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
