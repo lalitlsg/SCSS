@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(187, 56, 56);
+}
+
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@include media(1000px) {
+  body {
+    background-color: rgb(43, 128, 128);
+  }
+}
+
+@include media(700px) {
+  body {
+    background-color: blueviolet;
+  }
+}
+
+@include media(500px) {
+  body {
+    background-color: rgb(162, 207, 57);
+  }
+}

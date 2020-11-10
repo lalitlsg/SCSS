@@ -1,0 +1,22 @@
+body {
+  background-color: #bb3838;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: #2b8080;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: blueviolet;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #a2cf39;
+  }
+}
+/*# sourceMappingURL=style.css.map */
