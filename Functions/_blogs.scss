@@ -44,4 +44,17 @@ $base-width: 100;
     margin-left: unit(100px);
     margin-top: unitless(100);
   }
+
+  //String Functions
+  .str {
+    font-family: quote(Arial);
+    font-family: unquote("sans-serif");
+    font-family: to-upper-case(cursive);
+    font-family: to-lower-case(SERIF);
+    font-size: str-length(Arial);
+    font-size: str-index("Lalit", "l");
+    font-size: str-insert("Lalit", "G", 6);
+    font-size: str-slice("Lalit", 2, 4);
+    font-family: unique-id();
+  }
 }

@@ -194,9 +194,21 @@ main div:nth-child(6) {
   border-top: 10px;
   border-left: 50%;
   border-right: false;
-  border-radius: 3;
+  border-radius: 6;
   margin-left: "px";
   margin-top: true;
+}
+
+#func .str {
+  font-family: "Arial";
+  font-family: sans-serif;
+  font-family: CURSIVE;
+  font-family: serif;
+  font-size: 5;
+  font-size: 3;
+  font-size: "LalitG";
+  font-size: "ali";
+  font-family: uebd1bbdb;
 }
 
 @media (max-width: 600px) {
@@ -211,12 +223,6 @@ main div:nth-child(6) {
     text-align: center;
   }
   header section div {
-    display: block;
-  }
-}
-
-@media (min-width: 600px) {
-  header nav {
     display: block;
   }
 }
