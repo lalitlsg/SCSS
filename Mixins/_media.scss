@@ -1,0 +1,27 @@
+@media (max-width: 600px) {
+  header {
+    display: block;
+    nav {
+      display: none;
+      ul {
+        li {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+    section {
+      div {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    nav {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* header {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  background-color: #4c74cd;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+* header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* header section h1 {
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+* header section div {
+  display: none;
+}
+
+* header section div span {
+  display: block;
+  height: 5px;
+  width: 40px;
+  background-color: white;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+* header nav ul {
+  margin: 5px 0;
+  list-style-type: none;
+}
+
+* header nav ul li {
+  display: inline;
+  padding: 5px;
+}
+
+* header nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+* header nav ul li:hover {
+  background-color: #7393d8;
+}
+
+* aside {
+  width: 200px;
+  background-color: #f2f2f2;
+  margin: 10px;
+}
+
+* aside div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #7393d8;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+* aside div:hover {
+  color: white;
+  background-color: #7393d8;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+@media (max-width: 600px) {
+  header {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+  header nav ul li {
+    display: block;
+    text-align: center;
+  }
+  header section div {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) {
+  header nav {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
