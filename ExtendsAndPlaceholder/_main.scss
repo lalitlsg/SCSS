@@ -1,0 +1,46 @@
+.social-common {
+  @include text-shadow();
+  @include box-shadow(5px);
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  color: $text-color;
+}
+
+%main-css {
+  min-width: 200px;
+  background-color: $aside-bg;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main {
+  @extend %main-css;
+  div:nth-child(1) {
+    @extend .social-common;
+    background-color: blue;
+  }
+  div:nth-child(2) {
+    @extend .social-common;
+    background-color: red;
+  }
+  div:nth-child(3) {
+    @extend .social-common;
+    background-color: black;
+  }
+  div:nth-child(4) {
+    @extend .social-common;
+    background-color: orange;
+  }
+  div:nth-child(5) {
+    @extend .social-common;
+    background-color: lightcoral;
+  }
+  div:nth-child(6) {
+    @extend .social-common;
+    background-color: violet;
+  }
+}

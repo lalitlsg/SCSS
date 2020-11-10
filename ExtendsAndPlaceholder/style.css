@@ -101,6 +101,57 @@
           transform: translateX(10px);
 }
 
+* .social-common, * main div:nth-child(1), * main div:nth-child(2), * main div:nth-child(3), * main div:nth-child(4), * main div:nth-child(5), * main div:nth-child(6) {
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+
+* main {
+  min-width: 200px;
+  background-color: #f2f2f2;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* main div:nth-child(1) {
+  background-color: blue;
+}
+
+* main div:nth-child(2) {
+  background-color: red;
+}
+
+* main div:nth-child(3) {
+  background-color: black;
+}
+
+* main div:nth-child(4) {
+  background-color: orange;
+}
+
+* main div:nth-child(5) {
+  background-color: lightcoral;
+}
+
+* main div:nth-child(6) {
+  background-color: violet;
+}
+
 @media (max-width: 600px) {
   header {
     display: block;
