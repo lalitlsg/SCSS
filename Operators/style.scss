@@ -1,0 +1,60 @@
+$base-width: 100px;
+$base-height: 100px;
+$sixth-div: "six";
+$radius: "radius";
+section {
+  div {
+    display: inline-block;
+  }
+  //Numeric
+  //add
+  #first {
+    width: $base-width + 50px;
+    height: $base-height + 50px;
+    background-color: #fee7f2;
+  }
+  //subtract
+  #second {
+    width: $base-width - 50px;
+    height: $base-height - 50px;
+    background-color: #db1b78;
+  }
+
+  //multiple
+  #third {
+    width: $base-width * 2;
+    height: $base-height * 2;
+    background-color: #1ac228;
+  }
+  //multiple
+  #forth {
+    width: $base-width / 2;
+    height: $base-height / 2;
+    background-color: #1ac228;
+  }
+  //concat
+  #fifth {
+    width: $base-width / 2 + 10px;
+    height: $base-height / 2;
+    background-color: #1ac228;
+  }
+
+  //interpolation
+
+  .div-#{$sixth-div} {
+    width: $base-width;
+    height: $base-height;
+    background-color: #e949e1;
+    border-#{$radius}: 20px;
+    text-align: center;
+  }
+
+  //   Relational
+  //   < > <= >=
+
+  //   Boolean
+  //   and or not
+
+  //   Equality
+  //   == !=
+}
