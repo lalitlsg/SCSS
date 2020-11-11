@@ -127,3 +127,13 @@ $map1: (
     color: $value;
   }
 }
+
+//@while directive
+
+$i: 10;
+@while $i <= 30 {
+  #buy#{$i} {
+    font-size: $i + px;
+  }
+  $i: $i + 10;
+}
