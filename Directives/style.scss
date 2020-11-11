@@ -88,3 +88,16 @@ $bg: 5;
     background-color: brown;
   }
 }
+
+//@for directive
+@for $var from 1 through 3 {
+  li:nth-child(#{$var}) {
+    font-size: $var * 10px;
+  }
+}
+
+@for $var from 1 to 3 {
+  li:nth-child(#{$var}) {
+    background-color: rgb(162 * $var, 207, 57);
+  }
+}
