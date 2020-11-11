@@ -61,4 +61,10 @@ ul {
   list-style-type: none;
   font-size: 1em;
 }
+
+#buy {
+  margin: 10px;
+  color: red;
+  background-color: brown;
+}
 /*# sourceMappingURL=style.css.map */

@@ -61,3 +61,30 @@ ul {
     }
   }
 }
+
+$value: 5;
+$key: "go";
+$bg: 5;
+#buy {
+  margin: 10px;
+  //@if directive
+
+  @if $value < 5 {
+    display: none;
+  }
+  //@if @else directive
+
+  @if $key == "go" {
+    color: red;
+  } @else {
+    color: green;
+  }
+  //@else if
+  @if $bg < 5 {
+    background-color: aqua;
+  } @else if $bg>5 and $bg < 10 {
+    background-color: blueviolet;
+  } @else {
+    background-color: brown;
+  }
+}
