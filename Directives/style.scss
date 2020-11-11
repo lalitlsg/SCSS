@@ -38,3 +38,26 @@ header {
     box-shadow: 0 5px 5px rgba(#000000, 0.2);
   }
 }
+
+//@at-root Directive
+ul {
+  list-style-type: none;
+  @at-root {
+    li {
+      padding: 5px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  //@at-root without
+  @media print {
+    list-style-type: disc;
+    font-size: 2em;
+
+    @at-root (without: media) {
+      list-style-type: none;
+      font-size: 1em;
+    }
+  }
+}
