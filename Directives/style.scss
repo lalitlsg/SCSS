@@ -2,6 +2,7 @@ body {
   background-color: rgb(187, 56, 56);
 }
 
+//Content Directive
 @mixin media($width) {
   @media screen and (max-width: $width) {
     @content;
@@ -23,5 +24,17 @@ body {
 @include media(500px) {
   body {
     background-color: rgb(162, 207, 57);
+  }
+}
+
+//Media Directive
+header {
+  height: 100px;
+  background-color: rgb(97, 240, 53);
+  @media screen and (max-width: 700px) {
+    border-radius: 20px;
+  }
+  @media screen and (max-width: 500px) {
+    box-shadow: 0 5px 5px rgba(#000000, 0.2);
   }
 }

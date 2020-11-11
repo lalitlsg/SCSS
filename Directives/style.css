@@ -19,4 +19,22 @@ body {
     background-color: #a2cf39;
   }
 }
+
+header {
+  height: 100px;
+  background-color: #61f035;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+}
 /*# sourceMappingURL=style.css.map */
