@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  height: 100px;
+  min-height: 100px;
   background-color: #61f035;
 }
 
@@ -86,5 +86,37 @@ li:nth-child(1) {
 
 li:nth-child(2) {
   background-color: #ffcf39;
+}
+
+li.oblique {
+  font-style: oblique;
+}
+
+li.bold {
+  font-style: bold;
+}
+
+li.italic {
+  font-style: italic;
+}
+
+li.solid {
+  border: 2px solid red;
+}
+
+li.dashed {
+  border: 5px dashed blue;
+}
+
+li.oblique a {
+  color: white;
+}
+
+li.bold a {
+  color: black;
+}
+
+li.italic a {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

@@ -29,7 +29,7 @@ body {
 
 //Media Directive
 header {
-  height: 100px;
+  min-height: 100px;
   background-color: rgb(97, 240, 53);
   @media screen and (max-width: 700px) {
     border-radius: 20px;
@@ -99,5 +99,31 @@ $bg: 5;
 @for $var from 1 to 3 {
   li:nth-child(#{$var}) {
     background-color: rgb(162 * $var, 207, 57);
+  }
+}
+
+//@each directive
+$list1: oblique, bold, italic;
+$list2: ((2px solid red), (5px dashed blue));
+$map1: (
+  oblique: white,
+  bold: black,
+  italic: red
+);
+@each $var in $list1 {
+  li.#{$var} {
+    font-style: $var;
+  }
+}
+
+@each $w, $s, $c in $list2 {
+  li.#{$s} {
+    border: $w $s $c;
+  }
+}
+
+@each $key, $value in $map1 {
+  li.#{$key} a {
+    color: $value;
   }
 }
